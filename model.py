@@ -3,30 +3,13 @@
 import tensorflow as tf
 from tensorflow.examples.tutorials.mnist import input_data
 import numpy as np
-from scipy.misc import imsave
-import os
 import shutil
 from PIL import Image
 import time
 import random
 
-
+from config import *
 from layers import *
-
-img_height = 256
-img_width = 256
-img_layer = 3
-img_size = img_height * img_width
-
-
-batch_size = 1
-pool_size = 50
-ngf = 32
-ndf = 64
-
-
-
-
 
 def build_resnet_block(inputres, dim, name="resnet"):
     
